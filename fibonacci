@@ -5,7 +5,8 @@ public class fibonacci {
     }
    
     public static void main(String [] args){
-        int n, fibbo, i;
+        int n, fibbo, i, tot, total;
+		total = 0; tot = 0; 
         Scanner input = new Scanner(System.in);
         System.out.println("Input: ");
         n = input.nextInt();
@@ -13,8 +14,10 @@ public class fibonacci {
            for(i=1; i<=n; i++)
            {
 				fibbo = itung(i);
-				System.out.print(fibbo+ " ");
+				tot = tot + fibbo;
            } 
+		   total = tot;
+		   System.out.print(total);
     }
    
     public static int itung(int n){
