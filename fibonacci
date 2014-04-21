@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class fibonacci {
+
+    public fibonacci() {
+    }
+   
+    public static void main(String [] args){
+        int n, fibbo, i;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input: ");
+        n = input.nextInt();
+		System.out.println("Output: ");
+           for(i=1; i<=n; i++)
+           {
+				fibbo = itung(i);
+				System.out.print(fibbo+ " ");
+           } 
+    }
+   
+    public static int itung(int n){
+        int fibo;
+        if(n==0)
+            return 0;
+        if(n==1)
+            return(1);         
+        else
+            fibo = itung(n-1) + itung(n-2);
+        return fibo;
+    }
+ }
